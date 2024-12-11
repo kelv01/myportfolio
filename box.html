@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <!-- Link to Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Roboto', sans-serif; /* Applying the imported font */
+            margin: 0;
+            padding: 0;
+            background-color: #b0bec5; /* Cool grey background color */
+            color: #333; /* Neutral text color */
+        }
+        
+        /* Header section styling */
+        header {
+            background: #6200ea; /* Deep purple background */
+            color: white; /* White text for contrast */
+            padding: 20px 10%; /* Responsive padding */
+            text-align: center;
+        }
+        header h1 {
+            margin: 0; /* Removing default margin */
+            font-size: 2.5em; /* Enlarged font size */
+        }
+        header p {
+            margin: 10px 0 0; /* Subtle spacing below the title */
+        }
+        
+        /* Navigation bar styling */
+        nav {
+            margin-top: 20px; /* Adding space above navigation links */
+        }
+        nav a {
+            color: white; /* White links to match header */
+            text-decoration: none; /* Removing underline */
+            margin: 0 15px; /* Even spacing between links */
+            font-weight: bold; /* Emphasized text */
+        }
+        nav a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+        
+        /* Section styling */
+        .section {
+            padding: 50px 10%; /* Generous padding for sections */
+        }
+        .section-title {
+            font-size: 2em; /* Large, bold section titles */
+            margin-bottom: 20px; /* Space below the title */
+        }
+        
+        /* Expertise grid styling */
+        .expertise {
+            display: flex; /* Flexbox layout */
+            flex-wrap: wrap; /* Allow items to wrap onto the next row */
+            gap: 20px; /* Space between grid items */
+        }
+        .expertise-item {
+            flex: 1 1 calc(33% - 20px); /* Responsive sizing for three columns */
+            background: #ffffff; /* White background for contrast */
+            padding: 20px; /* Inner padding */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            border-radius: 8px; /* Rounded corners */
+        }
+        .expertise-item h3 {
+            margin-top: 0; /* Remove top margin for consistency */
+        }
+        
+        /* Footer styling */
+        footer {
+            background: #333; /* Dark footer background */
+            color: white; /* White text for visibility */
+            text-align: center; /* Center-aligned content */
+            padding: 20px; /* Space around footer content */
+            margin-top: 50px; /* Space above footer */
+        }
+        footer p {
+            margin: 0; /* Removing default paragraph margin */
+        }
+        footer a {
+            color: #6200ea; /* Matching link color with header */
+            text-decoration: none; /* Removing underline */
+        }
+        footer a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <h1>John Doe</h1>
+        <p>Back-end Developer | Flutter App Developer | Firebase Specialist</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a passionate developer with 3 years of professional experience specializing in back-end development, mobile app development using Dart and Flutter, and robust back-end solutions with Firebase and MySQL. I thrive on solving complex problems and creating user-friendly solutions that scale.</p>
+    </section>
+
+    <!-- Expertise section -->
+    <section id="expertise" class="section">
+        <h2 class="section-title">Expertise</h2>
+        <div class="expertise">
+            <!-- Individual expertise item: Back-End Development -->
+            <div class="expertise-item">
+                <h3>Back-End Development</h3>
+                <p>Designing and implementing efficient server-side applications using Python. Proficient in frameworks like Django and Flask.</p>
+            </div>
+            <!-- Individual expertise item: App Development -->
+            <div class="expertise-item">
+                <h3>App Development</h3>
+                <p>Creating visually appealing and functional mobile applications with Dart and Flutter, ensuring cross-platform compatibility.</p>
+            </div>
+            <!-- Individual expertise item: Firebase Integration -->
+            <div class="expertise-item">
+                <h3>Firebase Integration</h3>
+                <p>Developing scalable, real-time solutions using Firebase for back-end support, authentication, and cloud storage.</p>
+            </div>
+            <!-- Individual expertise item: Database Management -->
+            <div class="expertise-item">
+                <h3>Database Management</h3>
+                <p>Expertise in designing and managing relational databases with MySQL, ensuring optimized queries and data integrity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <p>If you are interested in working together, feel free to reach out!</p>
+        <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+        <p>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 John Doe. All Rights Reserved. | <a href="#">Back to Top</a></p>
+    </footer>
+</body>
+</html>
